@@ -1,0 +1,21 @@
+{
+  "name": "Personal Website",
+  "version": 2,
+  "builds": [
+    { "src": "build/**", "use": "@now/static" }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/build/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/build/html/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/build/html/$1.html"
+    }
+  ]
+}
