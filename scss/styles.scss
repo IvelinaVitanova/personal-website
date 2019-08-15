@@ -4,3 +4,55 @@
 // body {
 //   background-image: url('../img/<path>/<to>/<img>');
 // }
+body {
+    height: 100vh;
+}
+
+nav ul {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ nav ul li {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+ }
+
+ a {
+    text-decoration:  none;
+    color: orange;
+    font-family: monospace;
+    font-size: 17px;
+ }
+
+img {
+    display: block;
+    float:  right;
+    width: 1500px;
+    margin: none;
+}
+
+.home .content {
+    background-image: url("../img/Plovdiv.jpg");
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 70px - 80px);  // 70px is nav, 80px is footer
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    height: 80px;
+}
+
+// when screen is less than 760px width, overwrite some CSS writte above
+// @media(max-width: 760px) {
+//     .content {
+//         background-image: none;
+//     }
+// }

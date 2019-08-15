@@ -8,15 +8,21 @@
   {% block head_extra %}{% endblock head_extra %}
 </head>
 
-<body class="{% block body_classes %}{% endblock body_classes %}">
+<body class="{% block body_classes %}home {% endblock body_classes %}">
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/blog">Blog</a></li>
+      <li><a href="/">|Home|</a></li>
+      <li><a href="/blog">|Blog|</a></li>
+      <li><a href="Gallery">|Gallery|</a></li>
     </ul>
   </nav>
 
+
+
   <section class="content">
+    <!-- <img src="img/Plovdiv.jpg"
+    width="1300" height="900"> -->
+
     {% block content %}{% endblock %}
   </section>
 
